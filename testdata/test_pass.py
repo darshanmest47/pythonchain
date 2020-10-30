@@ -6,7 +6,7 @@ from hubspot.testdata.test_login import Testlogin
 
 
 class Testpass(Basetest):
-
+    @pytest.mark.integration
     def test_email_veri(self):
         user=Username(self.driver)
         user.eneter_Username(Testdata.username)
